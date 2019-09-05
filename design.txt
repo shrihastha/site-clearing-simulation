@@ -1,0 +1,24 @@
+Design and Approach
+----------------------
+Techologies used - Java, Junit, Maven, Eclipse IDE
+
+1) Run the application by passing absolute path of sitemap as command line argument
+2) Read the file and store the values in List<List<Character>>
+	Assumptions - Each row will have same count
+				  Support any site map so used ArrayList instead of two dimensional char array
+3) Display the sitemap on the screen
+4) Take instructions from the user. User instructions are stored in a List<String>
+5) Process the instructions -
+	The directions are stored as North =1, East =2, South=3, and West=4
+	The application quits if it tries to remove protected tree or the list size is greater than the actual size or less than zero which means the bulldozer has moved out of the site.
+	After executing each command, add the cost to attributes in Item class
+6) Print all the instructions entered by the user
+7) Calculate the total cost and display the total cost on the user screen
+	a) Communication cost - 1 unit except for quit command
+	b) Fuel unit as described in the required
+	c) Uncleared squares charges = (Total blocks - protected trees - cleared block) * 3;
+8) Test cases covers the following scenarios -
+	a) Move through removable trees
+	b) Attempt to remove a tree that is protected
+	c) Clearing rocks in the site
+	d) Attempt to navigate beyond the boundaries of the site

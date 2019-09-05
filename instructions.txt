@@ -1,0 +1,7 @@
+Instructions to run -
+ 1) Unzip the file to a folder
+ 2) File -> Import -> Existing Maven Projects -> Select the folder
+ 3) Go inside the extracted folder
+      Execute -> 'mvn clean package'
+      Execute -> java -cp target\site-clearing-simulation-0.0.1-SNAPSHOT.jar com.oracle.SiteClearingSimulation "C:\sitemap.txt"
+	
